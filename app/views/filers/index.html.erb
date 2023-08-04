@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Filers</h1>
+<%= form_with :url=> file_upload_path,method: :post do |form|%>
+<%= form.file_field :csv_file, accept: ".csv"%>
+<%= form.submit %>
+<%end%>
+
+

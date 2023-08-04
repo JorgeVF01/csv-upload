@@ -1,0 +1,11 @@
+
+<table>
+
+<%= @table.each do |row| %>
+<tr>
+  <%= row.each do |value|%>
+  <th><%= value%></th>
+  <%end%>
+</tr>
+<%end%>
+</table>
